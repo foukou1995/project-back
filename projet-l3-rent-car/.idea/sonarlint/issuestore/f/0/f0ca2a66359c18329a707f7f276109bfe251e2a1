@@ -1,0 +1,10 @@
+
+]	java:S125M"<This block of commented-out lines of code should be removed.(êƒ‹¾úÿÿÿÿ8ú»Ğèú1
+w
+java:S1128"URemove this unused import 'com.decathlon.projetl3rentcar.controller.in.VehicleDtoIn'.(éò÷¥ÿÿÿÿÿ8ú»Ğèú1
+t
+java:S1128	"WRemove this unused import 'com.decathlon.projetl3rentcar.controller.out.VehicleDtoOut'.( ÿÜŸ8ú»Ğèú1
+n
+java:S1128"QRemove this unused import 'com.decathlon.projetl3rentcar.service.VehicleService'.(©–­à8ú»Ğèú1
+s
+java:S1128"VRemove this unused import 'org.springframework.http.MediaType.APPLICATION_JSON_VALUE'.(òÎÃã8ú»Ğèú1
