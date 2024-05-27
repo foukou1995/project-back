@@ -21,13 +21,15 @@ public class RentalRecordDtoOut {
     private ZonedDateTime startDate;
     private ZonedDateTime endDate;
     private String status;
-    public RentalRecordDtoOut(RentalRecord rentalRecord ) {
+    private String customerEmail;
+    public RentalRecordDtoOut(RentalRecord rentalRecord,String customerEmail ) {
         this.id = rentalRecord.getId();
         this.vehicleId = rentalRecord.getVehicleId();
         this.totalCost = rentalRecord.getTotalCost();
         this.startDate=rentalRecord.getStartDate();
         this.endDate=rentalRecord.getEndDate();
         this.status=rentalRecord.getStatus();
+        this.customerEmail=customerEmail;
     }
 
 }

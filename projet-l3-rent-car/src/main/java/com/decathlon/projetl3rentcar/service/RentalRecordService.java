@@ -23,7 +23,7 @@ public class RentalRecordService {
     public List<RentalRecordDtoOut> getRecords() {
         return rentalRecordRepository.findAll()
                 .stream()
-                .map(RentalRecordDtoOut::new).toList();
+                .map(rentalRecord -> new RentalRecordDtoOut(rentalRecord,customerRepository.findById(rentalRecord.getCustomerId()).get().getEmail())).toList();
     }
 
     public RentalRecordDtoOut createRecord(@Valid RentalRecordDtoIn rentalRecordDtoIn) {
@@ -37,7 +37,7 @@ public class RentalRecordService {
                 .status(rentalRecordDtoIn.getStatus())
                 .build();
         rentalRecord = rentalRecordRepository.save(rentalRecord);
-        return new RentalRecordDtoOut(rentalRecord);
+        return new RentalRecordDtoOut(rentalRecord,rentalRecordDtoIn.getCustomerEmail());
     }
 
 //    public void deleteVehicle(Integer vehicleId){
